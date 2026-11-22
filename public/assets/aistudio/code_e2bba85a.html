@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131315;color:#e5e1e4;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#c3c0ff", "on-surface": "#e5e1e4", "on-primary-fixed-variant": "#2f2ebe", "primary-container": "#8083ff", "on-tertiary": "#1d00a5", "primary-fixed-dim": "#c0c1ff", "outline": "#908fa0", "surface-container-lowest": "#0e0e10", "on-secondary-fixed": "#000767", "background": "#131315", "on-tertiary-container": "#180092", "outline-variant": "#464554", "error": "#ffb4ab", "tertiary-container": "#8582ff", "secondary": "#bdc2ff", "on-tertiary-fixed-variant": "#3323cc", "on-primary-container": "#0d0096", "on-primary": "#1000a9", "tertiary-fixed": "#e2dfff", "inverse-primary": "#494bd6", "inverse-on-surface": "#313032", "surface-container": "#201f22", "surface-container-low": "#1c1b1d", "on-tertiary-fixed": "#0f0069", "primary-fixed": "#e1e0ff", "secondary-fixed-dim": "#bdc2ff", "surface-variant": "#353437", "on-secondary": "#131e8c", "surface-container-high": "#2a2a2c", "secondary-fixed": "#e0e0ff", "on-secondary-fixed-variant": "#2f3aa3", "secondary-container": "#2f3aa3", "on-secondary-container": "#a8afff", "surface-tint": "#c0c1ff", "error-container": "#93000a", "surface-container-highest": "#353437", "on-surface-variant": "#c7c4d7", "on-error-container": "#ffdad6", "on-background": "#e5e1e4", "surface-bright": "#39393b", "primary": "#c0c1ff", "on-error": "#690005", "surface-dim": "#131315", "surface": "#131315", "tertiary": "#c3c0ff", "inverse-surface": "#e5e1e4", "on-primary-fixed": "#07006c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-lg": "3rem", "margin": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-sm": "1rem", "gutter-lg": "2rem", "gutter-sm": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem" }, "fontFamily": { "headline-lg-mobile": ["Geist"], "body-sm": ["Geist"], "label-nav": ["Geist"], "headline-lg": ["Geist"], "display-hero-mobile": ["Geist"], "label-badge": ["JetBrains Mono"], "label-code": ["JetBrains Mono"], "display-hero": ["Geist"], "body-lg": ["Geist"], "headline-md": ["Geist"], "body-md": ["Geist"], "headline-sm": ["Geist"] }, "fontSize": { "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }], "label-nav": ["0.875rem", { "lineHeight": "1", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600" }], "display-hero-mobile": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "600" }], "label-badge": ["0.6875rem", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }], "label-code": ["0.8125rem", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-hero": ["3.75rem", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-md": ["0.9375rem", { "lineHeight": "1.55", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-sm": ["1.25rem", { "lineHeight": "1.35", "letterSpacing": "-0.015em", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Monu Chahar Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCSofUv917Nj3zaXWg0lN4uS84D3_oRgMs6ulvPyJcc3iQoMwhKtpQuGOVZw_EBnFifpm-n2k5LqOEnJp-agrs-aAOj587kXrSfYWof0Z5P52H8NdPqz17c0bQ6HSgeKEuCa4emoCuNymZ8tDKSYdwBe4atEgIiuuu3nj3H4rGpuCt_vA0jASlmsSMPMkCAztVC5EKiqGpLGY3Zqxe_U9iMo2vlZd0KHB0CPDIgnBA"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Monu Chahar</span></div><div class="flex items-center gap-1"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-badge text-label-badge text-primary uppercase tracking-wider">Open to Work</span></div></div></div><div class="flex items-center gap-space-sm"><a class="flex items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[20px]">send</span></a><div class="relative flex items-center justify-center w-11 h-11"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHdSQHGzXU25xGFykW1sEHqJzoZ1G-jccLj_s8tRcIhgyF8vJ9Z6U0gzXRjA1NYP1Yxm0Cy4oF5G-798iVDk7sQPqGia7_M4Q07joNh1u9YUhXjjxceq6u_85lZAATW4poyueXWIHqzxNNMXz54iC4K0tx0dqx942pl_fv0wUPqRNHYlBq2kmn6mDB_NQORyn_t6-MIKb6PxhszWzBteE0jq_7l-nZfUqVgQSmn8c"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Ambient Indigo Glow Backdrop -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary/10 rounded-full blur-[90px] pointer-events-none -z-10"></div>
+<!-- Hero Content Wrap -->
+<div class="px-margin-sm flex flex-col gap-space-lg pt-4 pb-space-xl">
+<!-- Top Status Capsule -->
+<div class="flex items-center">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high/70 shadow-sm shadow-black/40">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-badge text-label-badge text-primary-fixed uppercase tracking-wider font-medium">Open to Learning & Opportunities</span>
+</div>
+</div>
+<!-- Core Title & Identity -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-code text-label-code text-on-surface-variant font-medium tracking-wide">print("Hello, World!")</span>
+<h1 class="font-display-hero-mobile text-display-hero-mobile font-semibold tracking-tight text-on-surface">
+        Hi, I'm <span class="bg-gradient-to-r from-primary via-secondary to-tertiary-fixed-dim bg-clip-text text-transparent">Monu Chahar</span>.
+      </h1>
+<p class="font-headline-sm text-headline-sm text-primary-fixed-dim font-medium">
+        Aspiring Software Developer & CS Scholar
+      </p>
+</div>
+<!-- Tagline & Narrative -->
+<div class="flex flex-col gap-3">
+<p class="font-body-lg text-body-lg text-on-surface leading-snug font-normal">
+        “Building ideas into reality, one line of code at a time.”
+      </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Passionate about crafting modular backend logic, scalable system components, and intuitive user experiences with modern software paradigms.
+      </p>
+<!-- Location Capsule -->
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-surface-container-low shadow-inner">
+<span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">India • GLA University, Mathura</span>
+</div>
+</div>
+<!-- Hero CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-3 pt-1">
+<a class="group flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary text-on-primary font-label-nav text-label-nav font-medium shadow-md shadow-primary/20 active:scale-[0.98] transition-transform" data-path="projects" href="#">
+<span>Explore My Work</span>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-surface-container-high/80 text-on-surface font-label-nav text-label-nav font-medium shadow-sm active:scale-[0.98] transition-all hover:bg-surface-bright" data-path="contact" href="#">
+<span class="material-symbols-outlined text-[18px] text-primary">chat</span>
+<span>Contact Me</span>
+</a>
+</div>
+<!-- Interactive Python IDE Terminal Card -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl overflow-hidden mt-1">
+<!-- Terminal Bar -->
+<div class="flex items-center justify-between px-3.5 py-2.5 bg-surface-container">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-error/70"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container/80"></div>
+<span class="font-label-code text-[11px] text-on-surface-variant ml-2 tracking-tight">developer.py</span>
+</div>
+<button class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container-high/50 hover:bg-surface-bright text-on-surface-variant transition-colors" id="copy-code-btn" title="Copy code" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span class="font-label-badge text-[10px]" id="copy-label">copy</span>
+</button>
+</div>
+<!-- Code Snippet Display -->
+<div class="p-4 font-label-code text-label-code overflow-x-auto leading-relaxed text-on-surface selection:bg-primary-container selection:text-on-primary">
+<p><span class="text-tertiary-fixed font-semibold">class</span> <span class="text-primary font-medium">Developer</span>:</p>
+<p class="pl-4"><span class="text-tertiary-fixed font-semibold">def</span> <span class="text-secondary font-medium">__init__</span>(<span class="text-primary-fixed-dim">self</span>):</p>
+<p class="pl-8"><span class="text-primary-fixed-dim">self</span>.name = <span class="text-secondary">"Monu Chahar"</span></p>
+<p class="pl-8"><span class="text-primary-fixed-dim">self</span>.role = <span class="text-secondary">"Software Developer"</span></p>
+<p class="pl-8"><span class="text-primary-fixed-dim">self</span>.degree = <span class="text-secondary">"B.Tech CSE (Hons)"</span></p>
+<p class="pl-8"><span class="text-primary-fixed-dim">self</span>.passions = [</p>
+<p class="pl-12 text-secondary">"Python Architecture"<span class="text-outline">,</span></p>
+<p class="pl-12 text-secondary">"Web Technologies"<span class="text-outline">,</span></p>
+<p class="pl-12 text-secondary">"Algorithmic Logic"</p>
+<p class="pl-8">]</p>
+</div>
+<!-- Interactive Terminal Prompt Footer -->
+<div class="px-4 py-2.5 bg-surface-container-low/70 flex items-center justify-between text-on-surface-variant font-label-badge text-[11px]">
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">>>></span>
+<span class="text-on-surface">developer.status()</span>
+<span class="inline-block w-1.5 h-3.5 bg-primary animate-pulse ml-0.5"></span>
+</div>
+<span class="text-primary font-medium">READY</span>
+</div>
+</div>
+<!-- Quick Stats Grid Bar -->
+<div class="grid grid-cols-3 gap-2 py-2">
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low/90 text-center shadow-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">100+</span>
+<span class="font-label-badge text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">Problems Solved</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low/90 text-center shadow-sm">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">B.Tech</span>
+<span class="font-label-badge text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">CSE Scholar</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-low/90 text-center shadow-sm">
+<span class="font-headline-sm text-headline-sm text-tertiary font-semibold">3.8+</span>
+<span class="font-label-badge text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">GPA Standard</span>
+</div>
+</div>
+<!-- Section Heading: About Me -->
+<div class="flex items-center justify-between pt-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_circle</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-on-surface">About Me</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">The foundations, mindset, and trajectory</span>
+</div>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-widest">01 // PROFILE</span>
+</div>
+<!-- Card 1: Journey & Focus -->
+<div class="p-5 rounded-xl bg-surface-container/85 backdrop-blur-md shadow-md flex flex-col gap-3 relative overflow-hidden">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">The Journey & Focus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Currently pursuing Computer Science & Engineering at GLA University, Mathura. My technical discipline is anchored in algorithm design, rigorous data structures, and Python-driven architectures.
+      </p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-badge text-[11px]">Data Structures</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-badge text-[11px]">OOP</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-badge text-[11px]">Backend Services</span>
+</div>
+</div>
+<!-- Card 2: Core Philosophy -->
+<div class="p-5 rounded-xl bg-surface-container/85 backdrop-blur-md shadow-md flex flex-col gap-3 relative overflow-hidden">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Core Philosophy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Code isn't just execution instructions; it's a craft of long-term maintainability. I prioritize readable logic, modular abstractions, and deliberate user empathy when framing system interfaces.
+      </p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-badge text-[11px]">Clean Architecture</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-badge text-[11px]">Pragmatic Design</span>
+</div>
+</div>
+<!-- Key Strengths Pills -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2.5 shadow-sm">
+<span class="font-label-badge text-label-badge uppercase text-primary font-medium tracking-wide">Key Strengths & Pillars</span>
+<div class="flex flex-wrap gap-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-[14px] text-primary">terminal</span>
+<span>Python Architecture</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-[14px] text-secondary">palette</span>
+<span>Clean UI/UX Enthusiast</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-badge text-label-badge">
+<span class="material-symbols-outlined text-[14px] text-tertiary">bolt</span>
+<span>Curious Learner</span>
+</div>
+</div>
+</div>
+<!-- Quick Exploration Hub Section -->
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Next Dispatches</span>
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">Index</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Route 1: Projects -->
+<a class="group flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-path="projects" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">folder_code</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Featured Projects</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Full-stack software and Python tools</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform group-hover:translate-x-1 group-hover:text-primary">arrow_forward_ios</span>
+</a>
+<!-- Route 2: Skills -->
+<a class="group flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-path="skills" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Technical Skills</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Languages, frameworks & runtime toolchains</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform group-hover:translate-x-1 group-hover:text-secondary">arrow_forward_ios</span>
+</a>
+<!-- Route 3: Journey -->
+<a class="group flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-path="journey" href="#">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">timeline</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Milestones & Journey</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Academic timeline and hackathons</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transition-transform group-hover:translate-x-1 group-hover:text-tertiary">arrow_forward_ios</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initPortfolioInteractivity() {
+    const copyBtn = document.getElementById('copy-code-btn');
+    const copyLabel = document.getElementById('copy-label');
+    
+    if (copyBtn && copyLabel) {
+      const codeSnippet = `class Developer:\n    def __init__(self):\n        self.name = "Monu Chahar"\n        self.role = "Software Developer"\n        self.degree = "B.Tech CSE (Hons)"\n        self.passions = ["Python Architecture", "Web Technologies", "Algorithmic Logic"]`;
+      
+      copyBtn.addEventListener('click', async () => {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(codeSnippet);
+          }
+          copyLabel.textContent = 'copied!';
+          copyBtn.classList.add('text-primary');
+          setTimeout(() => {
+            copyLabel.textContent = 'copy';
+            copyBtn.classList.remove('text-primary');
+          }, 2000);
+        } catch (e) {
+          copyLabel.textContent = 'done';
+          setTimeout(() => {
+            copyLabel.textContent = 'copy';
+          }, 1500);
+        }
+      });
+    }
+  })();
+</script><footer class="w-full px-margin-sm py-space-xl bg-surface-container-lowest flex flex-col gap-space-md items-center text-center mt-space-xl"><div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high/60"><span class="material-symbols-outlined text-[14px] text-primary">location_on</span><span class="font-label-badge text-label-badge text-on-surface-variant uppercase">India • Remote Worldwide</span></div><div class="flex items-center justify-center gap-space-sm"><a aria-label="GitHub" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">terminal</span></a><a aria-label="LinkedIn" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a><a aria-label="Twitter" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">tag</span></a><a aria-label="Email" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a></div><p class="font-label-badge text-label-badge text-outline">© 2025 Monu Chahar. Engineered with precision.</p></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.35)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs overflow-x-auto"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[48px] min-h-[44px] transition-all gap-0.5 text-primary font-semibold" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-nav text-[10px] tracking-tight">About</span></a><a class="flex flex-col items-center justify-center min-w-[48px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="skills" href="#"><span class="material-symbols-outlined text-[20px]">code_blocks</span><span class="font-label-nav text-[10px] tracking-tight">Skills</span></a><a class="flex flex-col items-center justify-center min-w-[48px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="projects" href="#"><span class="material-symbols-outlined text-[20px]">folder_code</span><span class="font-label-nav text-[10px] tracking-tight">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[48px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="education" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-nav text-[10px] tracking-tight">Education</span></a><a class="flex flex-col items-center justify-center min-w-[48px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="journey" href="#"><span class="material-symbols-outlined text-[20px]">timeline</span><span class="font-label-nav text-[10px] tracking-tight">Journey</span></a><a class="flex flex-col items-center justify-center min-w-[48px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-all gap-0.5" data-path="contact" href="#"><span class="material-symbols-outlined text-[20px]">mail</span><span class="font-label-nav text-[10px] tracking-tight">Contact</span></a></div></nav></body></html>

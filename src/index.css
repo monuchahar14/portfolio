@@ -1,0 +1,289 @@
+@import "tailwindcss";
+
+@theme {
+  /* Obsidian Kinetic Color System (from Stitch DESIGN.md & code.html) */
+  --color-on-primary-fixed: #07006c;
+  --color-outline-variant: #464554;
+  --color-tertiary: #c3c0ff;
+  --color-secondary-fixed-dim: #bdc2ff;
+  --color-inverse-on-surface: #313032;
+  --color-on-tertiary-fixed: #0f0069;
+  --color-surface-bright: #39393b;
+  --color-on-tertiary-container: #180092;
+  --color-tertiary-container: #8582ff;
+  --color-surface-container-lowest: #0e0e10;
+  --color-on-surface-variant: #c7c4d7;
+  --color-on-background: #e5e1e4;
+  --color-inverse-surface: #e5e1e4;
+  --color-outline: #908fa0;
+  --color-on-secondary-container: #a8afff;
+  --color-on-primary: #1000a9;
+  --color-surface-container-high: #2a2a2c;
+  --color-surface-variant: #353437;
+  --color-on-surface: #e5e1e4;
+  --color-background: #131315;
+  --color-secondary: #bdc2ff;
+  --color-error: #ffb4ab;
+  --color-secondary-fixed: #e0e0ff;
+  --color-on-tertiary: #1d00a5;
+  --color-surface: #131315;
+  --color-tertiary-fixed: #e2dfff;
+  --color-on-primary-container: #0d0096;
+  --color-primary-container: #8083ff;
+  --color-surface-tint: #c0c1ff;
+  --color-primary-fixed: #e1e0ff;
+  --color-on-primary-fixed-variant: #2f2ebe;
+  --color-secondary-container: #2f3aa3;
+  --color-on-tertiary-fixed-variant: #3323cc;
+  --color-surface-dim: #131315;
+  --color-on-secondary-fixed-variant: #2f3aa3;
+  --color-on-secondary-fixed: #000767;
+  --color-primary: #c0c1ff;
+  --color-surface-container-highest: #353437;
+  --color-on-secondary: #131e8c;
+  --color-surface-container-low: #1c1b1d;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container: #201f22;
+  --color-inverse-primary: #494bd6;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #c0c1ff;
+  --color-tertiary-fixed-dim: #c3c0ff;
+  --color-error-container: #93000a;
+
+  /* Spacing System */
+  --spacing-margin-sm: 1rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-margin-lg: 3rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-gutter-lg: 2rem;
+  --spacing-space-md: 1rem;
+  --spacing-margin: 1.5rem;
+
+  /* Font Families */
+  --font-headline-lg: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-sm: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-label-badge: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-body-md: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body-lg: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-display-hero: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-lg-mobile: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-label-nav: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-label-code: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-headline-md: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-display-hero-mobile: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body-sm: "Geist", ui-sans-serif, system-ui, sans-serif;
+
+  /* Typography Scale */
+  --text-display-hero: 3.75rem;
+  --text-display-hero--line-height: 1.1;
+  --text-display-hero--letter-spacing: -0.04em;
+  --text-display-hero--font-weight: 600;
+
+  --text-display-hero-mobile: 2.25rem;
+  --text-display-hero-mobile--line-height: 1.15;
+  --text-display-hero-mobile--letter-spacing: -0.03em;
+  --text-display-hero-mobile--font-weight: 600;
+
+  --text-headline-lg: 2.25rem;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--letter-spacing: -0.03em;
+  --text-headline-lg--font-weight: 600;
+
+  --text-headline-lg-mobile: 1.75rem;
+  --text-headline-lg-mobile--line-height: 1.25;
+  --text-headline-lg-mobile--letter-spacing: -0.025em;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-headline-md: 1.5rem;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--letter-spacing: -0.02em;
+  --text-headline-md--font-weight: 500;
+
+  --text-headline-sm: 1.25rem;
+  --text-headline-sm--line-height: 1.35;
+  --text-headline-sm--letter-spacing: -0.015em;
+  --text-headline-sm--font-weight: 500;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--letter-spacing: -0.01em;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 0.9375rem;
+  --text-body-md--line-height: 1.55;
+  --text-body-md--letter-spacing: -0.005em;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 0.8125rem;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--letter-spacing: 0em;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-code: 0.8125rem;
+  --text-label-code--line-height: 1.4;
+  --text-label-code--letter-spacing: -0.01em;
+  --text-label-code--font-weight: 500;
+
+  --text-label-badge: 0.6875rem;
+  --text-label-badge--line-height: 1;
+  --text-label-badge--letter-spacing: 0.04em;
+  --text-label-badge--font-weight: 500;
+
+  --text-label-nav: 0.875rem;
+  --text-label-nav--line-height: 1;
+  --text-label-nav--letter-spacing: -0.01em;
+  --text-label-nav--font-weight: 500;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #131315;
+    color: #e5e1e4;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131315;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2f2ebe;
+  border-radius: 9999px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Modern subtle studio engineering grid mesh */
+.bg-grid-mesh {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+/* Smooth glow card hover spotlight */
+.interactive-card {
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.interactive-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(192, 193, 255, 0.35),
+    transparent 40%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.interactive-card:hover::after {
+  opacity: 1;
+}
+
+.interactive-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Text gradient glow */
+.hero-name-gradient {
+  background: linear-gradient(135deg, #ffffff 15%, #c0c1ff 55%, #8582ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 35px rgba(128, 131, 255, 0.3);
+}
+
+/* Reveal animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pulse beacon */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+
+.beacon-ring {
+  animation: pulse-ring 2.4s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-card-enter {
+  animation: fadeSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
